@@ -1,0 +1,141 @@
+import Foundation
+
+//diseña la clase Persona que contenga dos métodos
+class Persona
+
+{
+//El primero "Saludar", que reciba el parámetro nombre y regrese el mensaje, el nombre más el texto "mucho gusto".
+    var saludar = "nombre"
+    var caminar = 0;
+    func nombre()->String
+
+        {
+
+            return("Mucho gusto \(saludar)")
+//El segundo método "Caminar", que reciba como parámetro un tipo de dato Int y regrese un tipo de dato String indicando el número de pasos caminados.
+        }
+
+    func camina()->String
+
+        {
+
+            return("Ha caminado \(caminar) pasos")
+
+        }
+
+}
+
+// Diseña el struct Pantalla, la cual recibirá como parámetros el ancho y alto de una pantalla como tipo de datos Int con un constructor para inicializar la estructura.
+struct Pantalla
+
+{
+    var ancho:Int
+    var alto:Int
+
+}
+
+// diseña un extensión del tipo de dato Int que represente las horas y que pueda regresar los segundos correspondientes 
+
+extension Int
+
+{
+    var horas:Int
+    {
+        return self*1
+    }
+    var segundos:Int
+    {
+        return self*1440
+    }
+}
+
+let hora = 24.horas
+
+let segundos = 60.segundos
+
+print("Un dia es igual a \(hora) horas")
+
+print("24 horas tienen: \(segundos) segundos")
+
+//diseña una extensión del tipo de dato String que represente un día de la semana y regrese el número correspondiente
+
+extension String
+
+{
+    var Lunes:String
+    {
+        return "Lunes = 2"
+    }
+    var Martes:String
+    {
+        return "Martes = 3"
+    }
+    var  Miercoles:String
+    {
+        return "Miercoles = 4"
+    }
+    var Jueves:String
+    {
+        return "Jueves  = 5"
+    }
+    var Viernes:String
+    {
+        return "Viernes = 6"
+    }
+    var Sabado:String
+    {
+        return "Sabado = 7"
+    }
+    var Domingo:String
+    {
+        return "Domingo = 1"
+    }
+}
+
+let dia1 = "".Domingo
+
+let dia2 = "".Lunes
+
+let dia3 = "".Martes
+
+let dia4 = "".Miercoles
+
+let dia5 = "".Jueves
+
+let dia6 = "".Viernes
+
+let dia7 = "".Sabado
+
+print ("El dia es \(dia7)")
+
+//Optional, diseña una variable optional para recibir el tipo de dato Int en caso de que exista
+
+let numeros = ["10":10,"20":20,"30":30]
+
+var numero:Int?
+
+numero = numeros ["11"]
+
+if numeros["11"] != nil
+{
+    print("Sí existe")
+}
+else
+{
+    print("No existe")
+}
+
+
+//Collection
+
+let dias = ["GDL":120, "PUE":300, "MTY":100, "CDMX":200]
+var dia:Int?
+
+if dias ["DF"] != nil
+{
+    print("Sí existe")
+}
+else
+{
+    print("No existe")
+}
